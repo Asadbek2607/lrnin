@@ -1,1 +1,5 @@
-"Program for interface, not implementation" means designing your code to depend on abstract types (interfaces or abstract classes) rather than concrete implementations. This enhances flexibility, allowing you to easily swap or extend implementations without affecting the rest of your codebase."
+"Program for interface, not implementation" means designing your code 
+to depend on abstract types (interfaces or abstract classes) 
+rather than concrete implementations. 
+This enhances flexibility, allowing you to easily swap or extend implementations 
+without affecting the rest of your codebase."
