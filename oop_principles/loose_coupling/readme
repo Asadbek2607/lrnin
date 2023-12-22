@@ -1,0 +1,5 @@
+The principle of "loose coupling" is a fundamental concept in software design 
+and architecture, emphasizing the importance of minimizing dependencies between different components or modules in a system. 
+Loose coupling promotes flexibility, maintainability, and ease of modification 
+by reducing the impact of changes in one part of the system on other parts.
+
