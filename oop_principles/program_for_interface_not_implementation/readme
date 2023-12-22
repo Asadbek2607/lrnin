@@ -3,3 +3,9 @@ to depend on abstract types (interfaces or abstract classes)
 rather than concrete implementations. 
 This enhances flexibility, allowing you to easily swap or extend implementations 
 without affecting the rest of your codebase."
+
+Let's say we got a program which sends sms when order is shipped. It's okay for first time to write code for that. 
+But if there is any changes in notification type, for example, the owner wants email notification instead of SMS. 
+Then, we have to change our implementation to send SMS notification. 
+
+But if we program for interface, it will be flexible. 
