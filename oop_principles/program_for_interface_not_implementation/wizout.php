@@ -5,7 +5,6 @@ class Order{
 }
 
 class Shipment{
-    public $id;
     public $sendSMS;
     public function __construct(SendSMS $sendSMS)
     {
