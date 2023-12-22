@@ -1,35 +1,27 @@
 <?php
 
-class Order{
-    public $number;
+// here, Computer class really cares about the type of keyboard. Because exact keyboard type is given instead of abstract class.
+// if we want add new type, we have to change our Computer class. it's not best practice! 
+class Computer{
+    public RazorKeyboard $keyboard;
 }
 
-class Shipment{
-    public $sendSMS;
-    public function __construct(SendSMS $sendSMS)
-    {
-        $this->sendSMS = $sendSMS;
-    }
-
-    public function ship(Order $order)
-    {
-        return 'N'.$order->number.' is shipped!' . $this->sendSMS->send();
-    }
-
-
-}
-
-class SendSMS{
-
-    public function send()
-    {
-        return 'sms is sent';
+class RazorKeyboard{
+    public function type(){
+        return 'typing in razor...';
     }
 }
 
-$order = new Order();
-$order->number = 2;
+class LogitechKeyboard{
+    public function type(){
+        return 'typing in logi ...';
+    }
+}
 
-$sms = new SendSMS();
-$shipment = new Shipment($sms);
-echo $shipment->ship($order);
+
+$comp = new Computer();
+$comp->keyboard = new RazorKeyboard();
+echo $comp->keyboard->type();
+
+
+
